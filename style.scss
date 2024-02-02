@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+
+    .hero {
+
+        width: 100%;
+        height: 20%;
+        margin: 0 auto;
+
+        .hero_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                font-size: 47px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+            }
+
+            .hero_top_info {
+                font-size: 18px;
+                font-family: serif;
+            }
+
+            .hero_top_right {
+                transform: rotate(270deg);
+            }
+        }
+
+
+    }
+
+    nav {
+        width: 100%;
+        height: 10%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                list-style: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 400;
+
+
+
+            }
+        }
+
+
+    }
+
+    .hero_bottom {
+        img {
+            width: 1200px;
+        }
+
+    }
+
+}
+
+main {
+    width: 1200px;
+    height: 3000px;
+    margin: 0 auto;
+
+
+    .frame {
+        text-align: center;
+        padding-top: 30px;
+
+        .text {
+            font-weight: 600;
+            font-size: 34px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .items {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    }
+
+    .skills {
+        width: 1200px;
+        height: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        .box1 {
+            p {
+                font-size: 16px;
+                color: #D0D0D0;
+            }
+
+            .icons {
+                img {
+                    width: 26px;
+                }
+
+            }
+        }
+
+    }
+
+    .imgs {
+        width: 1200px;
+
+        
+
+        .foto {
+            justify-content: center;
+            align-items: center;
+            width: 936px;
+            height: 526px;
+            margin: 0 auto;
+            padding-left: 133px;
+        }
+
+       
+    }
+}
+
+footer {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+    position: relative;
+    top: -130px;
+
+    button {
+        width: 180px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    .logos {
+        width: 350px;
+        height: 40px;
+        margin: 0 auto;
+        gap: 50px;
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        ul{
+            li{
+                display: none;
+            }
+        }
+        .hero{
+            flex-direction: column;
+            .hreo_top_right{
+               display: inline;
+            }
+
+            .hero_top_right{
+                display: none;
+            }
+        }
+        hr{
+            display: none;
+        }
+    }
+
+    .hero_bottom {
+        width: 320px;
+        height: 480px;
+        background-image: url(./assest/img/BSPP2266designer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+
+        img {
+            display: none;
+        }
+    }
+
+    .frame {
+        width: 316px;
+        height: 334px;
+        margin: 0 auto;
+
+        p {
+
+            font-size: 13px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    }
+
+    .container {
+
+        flex-direction: column;
+
+    }
+
+    .imgs {
+
+        margin: 0 auto;
+        width: 318px;
+        height: 2124px;
+        position: relative;
+        top: 190px;
+        background: #F6F6F6;
+
+        img {
+            width: 316px;
+            height: 171px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            height: 100px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            background-color: #F6F6F6;
+            padding-top: 30px;
+
+        }
+
+        .porfolioo {
+            width: 97%;
+            font-size: 35px;
+            font-weight: 800;
+            padding: 30px;
+            background: #F6F6F6;
+            text-align: center;
+
+        }
+
+    }
+
+     footer{
+        margin: 0 auto; 
+        position: relative;
+        top: 500px;
+     }
+
+
+
+
+
+
+}
